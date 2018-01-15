@@ -4,7 +4,7 @@
 function sortZeros ($Rray = []) 
 {
     if(count($Rray) < 1) return 'Empty Array';
-    if(count($Rray) === 1 && ($Rray[0] === 0 || $Rray[0] === '0') ) return 'df'.$Rray[0];
+    if(count($Rray) === 1 && ($Rray[0] === 0 || $Rray[0] === '0') ) return $Rray[0];
 
     $array_of_zeros = [];
     foreach($Rray as $key=>$val){
