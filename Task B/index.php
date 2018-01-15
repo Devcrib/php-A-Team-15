@@ -27,7 +27,7 @@ function assign($listassign)
 {
     global $vals;
     global $counter;
-    $listassign->val = $vals[$counter];
+    $listassign->val = (int)$vals[$counter];
     if($listassign->next !== null){
         $counter++;
         assign($listassign->next);
